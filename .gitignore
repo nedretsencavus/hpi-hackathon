@@ -1,0 +1,9 @@
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+rsconnect/
+.DS_Store
+Thumbs.db
+.vscode/
+~$*
