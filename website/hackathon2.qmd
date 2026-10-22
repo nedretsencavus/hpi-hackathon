@@ -1,0 +1,31 @@
+---
+title: "Hackathon 2.0: Happy Planet Index Explorer"
+subtitle: "EPPS 6356 Data Visualization · Assignment 7"
+date: 2026-10-23
+---
+
+<!-- Coordinator: copy this file into the team website (Quarto site) and add it
+     to _quarto.yml navigation. Replace the two placeholder URLs below.
+     Plain HTML site instead? Use hackathon2.html in this folder. -->
+
+Our team's Shiny app links three charts from Abela's *Chart Suggestions: A Thought-Starter* (2006): **Chart 9**, a scatter chart; **Chart 18**, a bubble chart; and **Chart 3**, a bar chart we chose because the Happy Planet Index gives one score per country across more than 130 countries. Drag a box on the scatter chart to highlight those countries in the bubble chart and rank them in the bar chart; press play on the year slider to animate 2006–2025.
+
+```{=html}
+<iframe
+  src="https://REPLACE-WITH-CONNECT-CLOUD-URL"
+  title="Happy Planet Index explorer: scatter, bubble and bar charts, 2006 to 2025"
+  width="100%" height="1300"
+  style="border: 1px solid #d0d4d8; border-radius: 8px;"
+  loading="lazy"></iframe>
+```
+
+If the app does not load here, [open it in a new tab](https://REPLACE-WITH-CONNECT-CLOUD-URL). An idle app can take a little while to start.
+
+**Code:** [GitHub repository](https://github.com/REPLACE/REPO) · **Slides:** [link](https://REPLACE)
+
+**Data sources**
+
+- Hot or Cool Institute. 2026. *Happy Planet Index 2026: 2006–2025 Public Data Set*. <https://happyplanetindex.org/>
+- World Bank. 2026. *World Development Indicators* (GDP per capita, PPP, constant 2021 international $; population; regions). <https://databank.worldbank.org/source/world-development-indicators>
+
+**Team:** [Coordinator], [Member A], [Member B]. AI use is disclosed in the repository's `AI_DISCLOSURE.md`.
