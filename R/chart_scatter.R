@@ -31,6 +31,10 @@ plot_scatter <- function(d, x, y, cols, year) {
     ggplot2::geom_smooth(method = "lm", formula = y ~ x, se = FALSE,
                          colour = "grey55", linewidth = 0.6, linetype = "dashed") +
     ggplot2::geom_point(ggplot2::aes(colour = region), size = 2.6, alpha = 0.85) +
+    ggplot2::geom_text(
+      data = rbind(head(d[order(-d$hpi), ], 3), tail(d[order(-d$hpi), ], 3)),
+      ggplot2::aes(label = country), size = 3, vjust = -0.9,
+      colour = "grey20", check_overlap = TRUE) +
     ggplot2::scale_colour_manual(values = cols, drop = FALSE) +
     scale_for(x, "x") +
     scale_for(y, "y") +
@@ -40,6 +44,7 @@ plot_scatter <- function(d, x, y, cols, year) {
       caption  = wrap(sprintf("n = %d countries with both values. %s", nrow(d), source_note), 80)
     ) +
     ggplot2::guides(colour = ggplot2::guide_legend(nrow = 4)) +
+    ggplot2::coord_cartesian(clip = "off") +
     theme_hpi()
 }
 
