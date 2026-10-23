@@ -37,6 +37,10 @@ plot_bubble <- function(d, size_var, cols, year, highlight = character(0)) {
     p <- p + ggplot2::geom_point(data = d[!d$in_sel, ], colour = muted_grey, alpha = 0.5)
   }
   p +
+    ggplot2::geom_hline(yintercept = stats::median(d$hpi), linetype = "dotted", colour = "grey40") +
+    ggplot2::annotate("text", x = stats::quantile(d$log_gdp_pc, 0.15), y = stats::median(d$hpi) + 1.5,
+                      label = sprintf("Median HPI: %.1f", stats::median(d$hpi)),
+                      size = 3, colour = "grey30") +
     ggplot2::geom_point(data = d[d$in_sel, ], ggplot2::aes(colour = region),
                         alpha = 0.7, stroke = 0.3) +
     ggplot2::scale_size_area(max_size = 12, guide = "none") +
