@@ -30,3 +30,18 @@ Required by the EPPS 6356 AI policy (syllabus, "AI Policy"): the full exchange, 
 - Checked every chart title against the plotted data for at least two years.
 - Confirmed bar axes start at zero and the bubble legend states that area encodes the size variable.
 - Ran the deployed app at its public link from a logged-out browser.
+
+## Member A (Eric Huang): further AI use
+
+- **Tool:** Claude (Anthropic), claude.ai app, used on 22-23 Oct 2026. Transcript: https://claude.ai/share/0541ec1f-3800-4813-aedb-b4d0ef022590
+- **How:**
+  - Step-by-step guidance on cloning the repo, branching, and committing only my own files.
+  - Diagnosing why `data_prep.R` failed on the real workbook; I then edited it:
+    - wellbeing pattern -> `^life_satisfaction$` (it had matched "CoV adjusted ladder");
+    - footprint pattern -> `^ecological_footprint$` (it matched three columns);
+    - skip chart-only sheets with `tryCatch()`;
+    - relaxed the life-expectancy check to 10-95 after confirming CAR 2009 = 14.665 in the official file.
+  - Suggesting chart customizations, which I added and tested: labels for the 3 highest and 3 lowest HPI countries (Chart 9); a dotted median-HPI reference line (Chart 18).
+  - Drafting text for slides 2-3; the figures were computed from `data/hpi_clean.csv`.
+- **Why:** to finish the data and chart work on time under the 31-hour deadline, and to debug unfamiliar Git and workbook issues quickly.
+- **Verification:** ran `data_prep.R` (2,666 rows, 2006-2025, 134 countries in 2025); tested both chart functions in RStudio with the 2025 data before committing.
