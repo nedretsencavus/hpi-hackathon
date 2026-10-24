@@ -45,3 +45,27 @@ Required by the EPPS 6356 AI policy (syllabus, "AI Policy"): the full exchange, 
   - Drafting text for slides 2-3; the figures were computed from `data/hpi_clean.csv`.
 - **Why:** to finish the data and chart work on time under the 31-hour deadline, and to debug unfamiliar Git and workbook issues quickly.
 - **Verification:** ran `data_prep.R` (2,666 rows, 2006-2025, 134 countries in 2025); tested both chart functions in RStudio with the 2025 data before committing.
+
+### Member B (Anu) — AI Use Disclosure
+
+**AI tool:** OpenAI ChatGPT (GPT-6)
+
+**Purpose:** I used ChatGPT to guide me through my assigned tasks for Hackathon 2.0, including understanding the Shiny application, testing interactive visualizations, GitHub collaboration, deployment, and presentation preparation.
+
+**How AI was used:**
+
+- Interpreting the assignment instructions and coordinator's framework.
+- Setting up the GitHub repository and RStudio environment.
+- Understanding `app.R`, `chart_bar.R`, Shiny reactivity, and linked brushing.
+- Testing the scatter, bubble, and ranked bar charts.
+- Troubleshooting GitHub permissions, branches, commits, and pull requests.
+- Generating and deploying the application manifest on Posit Connect Cloud.
+- Drafting Slides 4 and 5 and explaining visualization design principles.
+
+**Verification:** The starter code was provided by the coordinator. I personally ran the application, tested the controls and linked brushing, completed GitHub commits, and verified that the published Shiny application was publicly accessible.
+
+**AI conversation transcript:** [Insert full ChatGPT conversation link or transcript file link]
+
+**Member B GitHub contribution:** https://github.com/nedretsencavus/hpi-hackathon/pull/3
+
+**Published Shiny application:** https://01a16b64-521e-cc41-bb42-bf74300c9d4d.share.connect.posit.cloud
